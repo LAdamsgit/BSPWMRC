@@ -1,0 +1,26 @@
+#!/bin/bash
+
+xsetroot -cursor_name left_ptr
+setxkbmap -option altwin:swap_alt_win
+sxhkd &
+
+bspc monitor                            -d 1 2 3 4 5 6 7 8 9 10
+
+bscp config remove_disabled_monitors    true
+bspc config remove_unplugged_monitor    true
+bspc config pointer_follows_monitor     true
+bspc config merge_overlapping_monitors  true
+
+bspc config border_width                0
+bspc config window_gap                  2
+
+bspc config split_ratio                 0.50
+bspc config borderless_monocle          true
+bspc config gapless_monocle             true
+
+bspc config pointer_modifier            mod1
+bspc config pointer_action1             move
+bspc config pointer_action2             resize_side
+bspc config pointer_action3             resize_corner
+
+wmname LG3D
