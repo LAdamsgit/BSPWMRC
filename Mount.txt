@@ -1,0 +1,10 @@
+# How to mount unraid drives
+
+# Movies
+sudo mount -t nfs 192.168.0.141:/mnt/user/Movies /home/ladams/Movies
+
+sudo umount -f -l /home/ladams/Movies
+
+# TV Shows
+sudo mount -t nfs 192.168.0.141:"/mnt/user/TV Shows" /home/ladams/TV
+
